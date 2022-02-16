@@ -1,6 +1,8 @@
 from turtle import Turtle
 import turtle
 from turtle import Screen
+import time
+
 
 
 def HeadText():
@@ -20,6 +22,7 @@ def HeadText():
     turtle.setposition(102, 227)
     turtle.write('Side 4', font=style, align='center')
     turtle.hideturtle()
+    # time.sleep(5000);
 
 def Base():
     for i in range(0, 4):
@@ -46,6 +49,7 @@ def Base():
     turtle.write('Time :', font=style, align='center')
     turtle.penup()
     turtle.hideturtle()
+    # time.sleep(5000);
 
 def Pole():
     for i in range(0, 4):
@@ -57,6 +61,7 @@ def Pole():
         pen9.sety(-15)
         pen9.setx(-200+(i*100))
         pen9.color('grey')
+        # time.sleep(5000);
 
 
 def Back():
@@ -69,6 +74,7 @@ def Back():
         pen9.penup()
         pen9.sety(150)
         pen9.setx(-200+(i*100))
+        # time.sleep(5000);
 
 def Red(Num):
     i=Num-1
@@ -98,6 +104,7 @@ def Red(Num):
     pen3.penup()
     pen3.sety(100)
     pen3.setx(-200 + (i * 100))
+    # time.sleep(5000);
 
 def Yellow(Num):
     i=Num-1
@@ -127,6 +134,7 @@ def Yellow(Num):
     pen3.penup()
     pen3.sety(100)
     pen3.setx(-200 + (i * 100))
+    # time.sleep(5000);
 
 def Green(Num,TCars,PCars,Time):
     i=Num-1
@@ -194,11 +202,13 @@ def Green(Num,TCars,PCars,Time):
     turtle.setposition(-200+(i*100), -197)
     turtle.write(Time, font=style, align='center')
     turtle.hideturtle()
+    # time.sleep(5000);
 
 def Reset():
     Yellow(1)
     Yellow(2)
     Yellow(3)
     Yellow(4)
+    # time.sleep(5000);
 
-
+# HeadText()

@@ -1,4 +1,5 @@
 import os
 
-dirpath=os.getcwd()
-print(dirpath)
+def path
+	dirpath=os.getcwd()
+	return (dirpath)

@@ -9,21 +9,43 @@ import cv2
 import numpy as np
 import os
 import random
+import sys
+
 
 dirpath=os.getcwd()
 
+# print("##########################")
+# path = "D:\\Capstone\\Smart-Traffic-Light\\STL_Py\\venv\\Images\\Side_4+1.png"
+# print('[DEBUG] path:', path)
+
+# img = cv2.imread(path)
+
+# if img is None:
+#     print('Wrong path:', path)
+# else:
+#     img = cv2.resize(img, dsize=(128,128))
+#     pixels.append(img)
+
 def main():
     L = []
-    path ="/Users/irateleaf/PycharmProjects/STL_Py/venv/Images"
-    imgpath1 = path + "/Side_4.png"
+    # path ="D:\\Capstone\\Smart-Traffic-Light\\STL_Py\\venv\\Images"
+    path = os.getcwd()
+    path = os.path.dirname(os.getcwd())
+
+    print("##########################")
+    print(path)
+    path = path + "\\Images"
+    print(path)
+    
+    imgpath1 = path + "\\Side_4.png"
     val = random.randrange(1, 3)
-    imgpath2 = path + "/Side_4+"+str(val)+".png"
+    imgpath2 = path + "\\Side_4+"+str(val)+".png"
     val = random.randrange(3, 5)
-    imgpath3 = path + "/Side_4+"+str(val)+".png"
+    imgpath3 = path + "\\Side_4+"+str(val)+".png"
     val = random.randrange(1, 11)
-    imgpath4 = path + "/Side_4+"+str(val)+".png"
+    imgpath4 = path + "\\Side_4+"+str(val)+".png"
     val = random.randrange(5, 7)
-    imgpath5 = path + "/Side_4+"+str(val)+".png"
+    imgpath5 = path + "\\Side_4+"+str(val)+".png"
 
     img1 = cv2.imread(imgpath1, 1)
     img2 = cv2.imread(imgpath2, 1)
